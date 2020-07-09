@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="postConsulta" class="soc.consulta.action.RegisterAction">
+			<result name="REGISTER">jsp/register.jsp</result>
+		</action>
+		<action name="getConsulta" class="soc.consulta.action.ReadAction">
+			<result name="READ">jsp/read.jsp</result>
+		</action>
+		<action name="putConsulta" class="soc.consulta.action.UpdateAction">
+			<result name="UPDATE">jsp/update.jsp</result>
+		</action>
+		<action name="deleteConsulta" class="soc.consulta.action.DeleteAction">
+			<result name="DELETE">jsp/delete.jsp</result>
+		</action>
+	</package>
+</struts>  
